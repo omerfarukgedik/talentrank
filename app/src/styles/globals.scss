@@ -1,0 +1,69 @@
+$bg-color: #eee;
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: $bg-color;
+  a {
+    text-decoration: none;
+    &:visited {
+      color: black;
+    }
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p {
+    margin: 0;
+  }
+
+  .interviews {
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin: 50px auto;
+
+    &__list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+
+      &__card {
+        background-color: white;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        padding: 10px;
+        width: 200px;
+        height: 100px;
+      }
+    }
+  }
+
+  .tab_wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 600px;
+    margin: 3rem auto;
+
+    .tab-container {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      &__title {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+      }
+    }
+  }
+}
